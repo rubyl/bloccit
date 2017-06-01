@@ -17,7 +17,7 @@ class TopicsController < ApplicationController
     @topic.description = params[:topic][:description]
 
     if @topic.save
-      flash[:notice] = "Topic was saved successfully.d"
+      flash[:notice] = "Topic was saved successfully"
       redirect_to @topic
     else
       flash.now[:alert] = "Error creating topic. Please try again."
